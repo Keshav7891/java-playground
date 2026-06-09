@@ -3,6 +3,12 @@ package designpatterns.creational.prototype;
 public class Main {
 
     public static void main(String[] args) {
+
+        /*
+        Problem: Creating a complex object from scratch is expensive — hitting a database, running validations, setting 30 default fields. When you need many similar objects, you pay that cost every time.
+        Solution: Keep a fully-built "master" object (the prototype) and clone() it. The clone starts as an exact copy; you only tweak what's different.
+         */
+
         DocumentRegistery registery = new DocumentRegistery();
 
         System.out.println("=== User 1: Creating NDA for Infosys ===");
